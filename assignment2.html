@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+function changeColor(color) {
+       document.body.style.background = color;
+            }
+ function ColChange() {
+       changeColor('yellow');
+
+            }
+
+</script>
+
+
+
+
+    <table>
+        <tr>
+        <td>First Name</td>
+        <td>
+            <input type="text" name="fname" id="fname" size="30" placeholder="Enter your First Name" tabindex="1" style="border-color:darkred ;"autofocus onblur="validateFirstName()"
+            onfocus="clearMessage()">
+        <span id="fnameError" style="color:red;"></span>
+        
+        </td>
+        </tr>
+        
+        <tr>
+            <td>Last Name</td>
+            <td>
+                <input type="text" name="lname" id="lname" size="30" placeholder="Enter your Last Name" tabindex="2" style="border-color:darkred ;" required>
+            </td>
+            </tr>
+            
+            <tr>
+                <td>User Name</td>
+                <td>
+                    <input type="text" name="uname" id="uname" size="30" placeholder="Enter your user Name" tabindex="3" style="border-color:darkred ;" onblur="validateUserName()" onfocus="clearMessage2()">
+                <span id="unameError" style="color:red;"></span>
+                </td>
+                </tr>  
+        
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input type="password" name="pass" id="pass" size="30" placeholder="Enter your Password" tabindex="4" style="border-color:darkred ">       </td>
+                    </tr>
+                    
+                   
+        
+                    <tr>
+                        <td>confirm Password</td>
+                        <td>
+                            <input type="password" name="cpass" id="cpass" size="30" placeholder="Enter your Password" tabindex="5" style="border-color:darkred ;" minlength="8" maxlength="14"
+                            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or max 14 characters" onblur="matchPassword()"
+        
+                            onfocus="clearMessage4()">
+       </td>
+       </tr>
+       <tr>
+           <td></td>
+           <td><button onclick="ColChange()">submit</button></td>
+       </tr>
+                        </table>
+</body>
+</html>
